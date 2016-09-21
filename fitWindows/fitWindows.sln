@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "fit main", "fit main\fit main.shproj", "{C3E1D744-2FCE-4F62-B450-C81C2D5B9D91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{98A04D87-BAA8-48B9-B027-A60639CB5F7E}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		fit main\fit main.projitems*{c3e1d744-2fce-4f62-b450-c81c2d5b9d91}*SharedItemsImports = 13
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98A04D87-BAA8-48B9-B027-A60639CB5F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A04D87-BAA8-48B9-B027-A60639CB5F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A04D87-BAA8-48B9-B027-A60639CB5F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A04D87-BAA8-48B9-B027-A60639CB5F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

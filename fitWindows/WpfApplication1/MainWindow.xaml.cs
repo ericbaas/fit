@@ -23,6 +23,8 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+            db.mongo.mongoInstance.connect();
+            db.mongo.mongoInstance.addExercize("Bench Press", new string[] { "chest", "shoulders" }, "upper");
         }
     }
 }
