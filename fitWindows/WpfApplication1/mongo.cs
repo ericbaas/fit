@@ -44,21 +44,26 @@ namespace db
             {
                 Console.WriteLine(e.Message);
             }
-
             IMongoClient client = new MongoClient();
             database = client.GetDatabase("fit");
+            try
+            {
+                database.CreateCollection("eList");
+            }
+            catch(Exception e) { }
             collection = database.GetCollection<BsonDocument>("eList");
+
         }
 
         public void addExercize(string name, string[] muscles, string location)
         {
-            var exercizes = new BsonDocument
+            var exercize = new BsonDocument
             {
                 { "name", name },
                 { "muscles", new BsonArray(muscles) },
                 { "location", location }
             };
-
+            collection.InsertOne(exercize);
         }
     }
 
